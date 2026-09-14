@@ -1,15 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="..\..\BuildSettings\Common.props" />
+  <Import Project="..\..\BuildSettings\NuGetVersioning.props" />
+
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <RootNamespace>Microsoft.EntityFrameworkCore</RootNamespace>
-    <LangVersion>latest</LangVersion>
     <Description>Core file-based database provider infrastructure for Entity Framework Core</Description>
+    <Title>RonSijm.EF.FileStore.Core</Title>
     <PackageId>RonSijm.EF.FileStore.Core</PackageId>
-    <Authors>RonSijm</Authors>
     <PackageTags>Entity Framework Core;EF Core;File Store;Database Provider</PackageTags>
+    <PackageOutputPath>..\..\packages</PackageOutputPath>
   </PropertyGroup>
 
   <ItemGroup>

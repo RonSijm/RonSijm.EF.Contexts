@@ -1,15 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="..\..\BuildSettings\Common.props" />
+  <Import Project="..\..\BuildSettings\NuGetVersioning.props" />
+
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <RootNamespace>Microsoft.EntityFrameworkCore</RootNamespace>
-    <LangVersion>latest</LangVersion>
     <Description>Markdown table database provider for Entity Framework Core</Description>
+    <Title>RonSijm.EF.Markdown</Title>
     <PackageId>RonSijm.EF.Markdown</PackageId>
-    <Authors>RonSijm</Authors>
     <PackageTags>Entity Framework Core;EF Core;Markdown;Database Provider</PackageTags>
+    <PackageOutputPath>..\..\packages</PackageOutputPath>
   </PropertyGroup>
 
   <ItemGroup>

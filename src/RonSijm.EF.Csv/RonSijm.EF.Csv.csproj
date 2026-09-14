@@ -1,15 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="..\..\BuildSettings\Common.props" />
+  <Import Project="..\..\BuildSettings\NuGetVersioning.props" />
+
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <RootNamespace>Microsoft.EntityFrameworkCore</RootNamespace>
-    <LangVersion>latest</LangVersion>
     <Description>CSV database provider for Entity Framework Core</Description>
+    <Title>RonSijm.EF.Csv</Title>
     <PackageId>RonSijm.EF.Csv</PackageId>
-    <Authors>RonSijm</Authors>
     <PackageTags>Entity Framework Core;EF Core;CSV;Database Provider</PackageTags>
+    <PackageOutputPath>..\..\packages</PackageOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
