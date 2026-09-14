@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/benchmarks/">
+    <Project Path="benchmarks/RonSijm.EF.Markdown.Benchmarks/RonSijm.EF.Markdown.Benchmarks.csproj" />
+  </Folder>
+  <Folder Name="/samples/">
+    <Project Path="samples/SampleApp/SampleApp.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/RonSijm.EF.FileStore.Core/RonSijm.EF.FileStore.Core.csproj" />
+    <Project Path="src/RonSijm.EF.Markdown/RonSijm.EF.Markdown.csproj" />
+    <Project Path="src/RonSijm.EF.Csv/RonSijm.EF.Csv.csproj" />
+    <Project Path="src/RonSijm.EF.Json/RonSijm.EF.Json.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/RonSijm.EF.Markdown.Tests/RonSijm.EF.Markdown.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>EntityFrameworkCore.Markdown.Benchmarks.Benchmarks.MemoryAllocationBenchmarks-20260202-144035</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.15.8, Windows 11 (10.0.26100.7623/24H2/2024Update/HudsonValley)
+13th Gen Intel Core i9-13980HX 2.20GHz, 1 CPU, 32 logical and 24 physical cores
+.NET SDK 10.0.102
+  [Host]     : .NET 9.0.12 (9.0.12, 9.0.1225.60609), X64 RyuJIT x86-64-v3
+  Job-UFXZUX : .NET 9.0.12 (9.0.12, 9.0.1225.60609), X64 RyuJIT x86-64-v3
+</code></pre>
+<pre><code>Server=True  
+</code></pre>
+
+<table>
+<thead><tr><th>Method    </th><th>EntityCount</th><th>Mean  </th><th>Error</th><th>StdDev</th><th>Median</th><th>Ratio</th><th>RatioSD</th><th>Rank</th><th>Gen0</th><th>Gen1</th><th>Gen2</th><th>Allocated</th><th>Alloc Ratio</th>
+</tr>
+</thead><tbody><tr><td>InMemory_ReadAll</td><td>100</td><td>160.36 &mu;s</td><td>5.906 &mu;s</td><td>16.945 &mu;s</td><td>158.79 &mu;s</td><td>1.01</td><td>0.15</td><td>2</td><td>1.9531</td><td>-</td><td>-</td><td>153.86 KB</td><td>1.00</td>
+</tr><tr><td>Markdown_ReadAll</td><td>100</td><td>31.05 &mu;s</td><td>1.271 &mu;s</td><td>3.521 &mu;s</td><td>30.47 &mu;s</td><td>0.20</td><td>0.03</td><td>1</td><td>0.3662</td><td>-</td><td>-</td><td>29.35 KB</td><td>0.19</td>
+</tr><tr><td>Sqlite_ReadAll</td><td>100</td><td>795.58 &mu;s</td><td>46.122 &mu;s</td><td>126.257 &mu;s</td><td>759.29 &mu;s</td><td>5.01</td><td>0.94</td><td>3</td><td>1.9531</td><td>-</td><td>-</td><td>191.23 KB</td><td>1.24</td>
+</tr><tr><td>InMemory_ReadAll</td><td>1000</td><td>1,635.03 &mu;s</td><td>68.334 &mu;s</td><td>192.737 &mu;s</td><td>1,600.18 &mu;s</td><td>1.01</td><td>0.16</td><td>2</td><td>15.6250</td><td>1.9531</td><td>-</td><td>1254.73 KB</td><td>1.00</td>
+</tr><tr><td>Markdown_ReadAll</td><td>1000</td><td>165.19 &mu;s</td><td>6.807 &mu;s</td><td>19.421 &mu;s</td><td>163.79 &mu;s</td><td>0.10</td><td>0.02</td><td>1</td><td>1.4648</td><td>-</td><td>-</td><td>120.77 KB</td><td>0.10</td>
+</tr><tr><td>Sqlite_ReadAll</td><td>1000</td><td>6,634.25 &mu;s</td><td>269.432 &mu;s</td><td>790.197 &mu;s</td><td>6,516.72 &mu;s</td><td>4.11</td><td>0.67</td><td>3</td><td>15.6250</td><td>-</td><td>-</td><td>1383.47 KB</td><td>1.10</td>
+</tr><tr><td>InMemory_ReadAll</td><td>5000</td><td>10,903.35 &mu;s</td><td>658.393 &mu;s</td><td>1,846.205 &mu;s</td><td>10,370.07 &mu;s</td><td>1.02</td><td>0.23</td><td>2</td><td>78.1250</td><td>31.2500</td><td>15.6250</td><td>6080.35 KB</td><td>1.00</td>
+</tr><tr><td>Markdown_ReadAll</td><td>5000</td><td>858.14 &mu;s</td><td>72.690 &mu;s</td><td>214.327 &mu;s</td><td>833.99 &mu;s</td><td>0.08</td><td>0.02</td><td>1</td><td>6.8359</td><td>1.9531</td><td>-</td><td>576.6 KB</td><td>0.09</td>
+</tr><tr><td>Sqlite_ReadAll</td><td>5000</td><td>55,639.89 &mu;s</td><td>830.073 &mu;s</td><td>735.838 &mu;s</td><td>55,531.30 &mu;s</td><td>5.23</td><td>0.77</td><td>3</td><td>-</td><td>-</td><td>-</td><td>6615.88 KB</td><td>1.09</td>
+</tr></tbody></table>
+</body>
+</html>
